@@ -5,9 +5,16 @@
     --color-3:#140524;
     --color-4:#1d0a6a;
     --color-5:rgb(220, 219, 219);
+
+}
+*,*::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    font-family: "Merriweather", serif;
+    font-family:Arial, Helvetica, sans-serif
     font-weight: 400;
     font-style: normal;
     background: rgb(33,9,85);
@@ -21,13 +28,66 @@ background: linear-gradient(90deg, rgba(33,9,85,1) 45%, rgba(208,23,184,1) 74%, 
     border:1px solid rgba(233, 231, 231,0.5);
     display: flex;
     align-items: center;
+    
 
 }
 .brand{
     
     color: var(--color-5);
-    /* font-weight: bolder; */
+     font-weight: bolder; 
     margin-left: 40px;
     font-size: 30px;
     
 }
+.brand1 {
+    color: var(--color-5);
+    
+    margin-left: 60px;
+    font-size: 20px;
+}
+    
+    .brand2{
+        color: var(--color-5);
+        
+        margin-left: 60px;
+        font-size: 20px;
+        
+    }
+    .brand3{
+        color: var(--color-5);
+    
+        margin-left: 60px;
+        font-size: 20px;
+        
+    }
+    .brand4{
+        color: var(--color-5);
+        
+        margin-left: 60px;
+        font-size: 20px;
+        
+    }
+    .brand5{
+        color: var(--color-5);
+        border-radius: 25px;
+        margin-left: 45%;
+        font-size: 17px;
+        background-color: #440686;
+        padding: 10px;
+        width: 13%;
+        text-align: center;
+        font-weight: bold;    
+
+    }
+    .brand5:hover{
+        background-color:#d017b8;
+        cursor: pointer;
+        color:#5e09b9
+        transition: 0.5s;
+    }
+    .left-section{
+       color: white;
+       margin-top: 10%;
+       margin-left: 10%;
+       font-size: 40px; 
+    }
