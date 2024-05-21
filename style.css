@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --color-1:#d017b8;
     --color-2:#1d0a6a;
@@ -11,11 +12,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif
-    font-weight: 400;
+   font-weight: 400;
     font-style: normal;
     background: rgb(33,9,85);
 background: linear-gradient(90deg, rgba(33,9,85,1) 45%, rgba(208,23,184,1) 74%, rgba(29,10,106,1) 100%);
@@ -82,12 +82,73 @@ background: linear-gradient(90deg, rgba(33,9,85,1) 45%, rgba(208,23,184,1) 74%, 
     .brand5:hover{
         background-color:#d017b8;
         cursor: pointer;
-        color:#5e09b9
+        color:#5e09b9;
         transition: 0.5s;
     }
     .left-section{
        color: white;
-       margin-top: 10%;
+       margin-top: 8%;
        margin-left: 10%;
        font-size: 40px; 
+       font-weight:normal ;
+       display: flex;
+       flex-direction: column;
     }
+    .text1{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:lighter;
+        color: rgba(160, 153, 153, 0.589);
+       
+        
+        font-size: 30px; 
+    }
+    .text2{
+        color: white;
+        font-family: Arial, sans-serif;
+        font-weight:bolder;
+        font-size: 100px;
+       
+        
+
+    }
+    .text3{
+        color: rgba(230, 216, 216, 0.589);
+        font-weight:lighter;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+        font-size: 20px; 
+        border-left: 2px solid  rgba(230, 216, 216, 0.589);
+        padding-left: 15px;
+        margin-top: 5%
+    }
+    .home-section{
+        margin-top: 2%;
+        display: flex;
+    }
+    .cv-button{
+       
+       
+       
+        color: white !important;
+        margin-top: 300px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    /* .cv-button-bg-1{
+        width: 120px;
+        height: 120px;
+        transform-origin: center;
+        clip-path: circle(40%);
+        background-color:rgba(251, 62, 226, 0.3);
+        
+        
+    } */
