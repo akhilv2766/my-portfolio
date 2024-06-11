@@ -4,7 +4,7 @@
 
 :root {
     --color-1: #d017b8;
-    --color-2: #1d0a6a;
+    --color-2: #2e07ca;
     --color-3: #140524;
     --color-4: #1d0a6a;
     --color-5: rgb(220, 219, 219);
@@ -72,9 +72,9 @@ body {
     padding: 5px;
 }
 .custom-nav-item:hover{
-    background-color: #d017b8;
+    text-decoration: underline;
     cursor: pointer;
-    color: #5e09b9;
+  ;
     transition: 0.5s;
     border-radius: 10px;
     
@@ -405,10 +405,12 @@ body {
         
        
       }
-      .p-section{
+      .logo-section-1{
        display: flex;
        justify-content:space-around;
        margin-top: 10%;
+       width: 70%;
+       margin-left: 16%;
       
       }
       .skill-section-item-1{
@@ -422,10 +424,13 @@ body {
     height: 100%;
    
 }
-.text-1{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size:200%;
-    font-weight: bold;
-}
+.logo-section-2{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 16%;
+   
+   }
 
+        
