@@ -23,7 +23,7 @@
 body {
     font-weight: 400;
     font-style: normal;
-
+    color: white;
     background: rgb(12, 1, 35);
     background: linear-gradient(90deg, rgba(33, 9, 85, 1) 45%, rgba(208, 23, 184, 1) 74%, rgba(29, 10, 106, 1) 100%);
 }
@@ -59,7 +59,7 @@ body {
     display: flex;
     color: var(--color-5);
     justify-content:space-between;
-   margin-right:18%;
+    margin-right:18%;
     font-size: 20px;
     width: 30vw;
     
@@ -67,18 +67,43 @@ body {
     
 }
 .custom-nav-item{
-    text-decoration: none;
     color: white;
-    padding: 5px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in;
 }
-.custom-nav-item:hover{
+
+.custom-nav-item span{
+    position: relative;
+}
+
+.custom-nav-item span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.custom-nav-item:hover span::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* .custom-nav-item:hover{
     text-decoration: underline;
     cursor: pointer;
   ;
     transition: 0.5s;
     border-radius: 10px;
     
-}
+} */
 
 .brand2 {
     color: var(--color-5);
@@ -430,7 +455,23 @@ body {
     margin-top: 10%;
     width: 70%;
     margin-left: 16%;
+    height: 50%;
    
    }
+   .project-section{
+    height: 100vh;
+   }
+   .mainheading{
+    color: white;
+   margin-top: 25%;
+    text-align: center;
+    font-size: 600%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+   }
+   .project-item2{
+    color: white;
+   }
+    
 
         
