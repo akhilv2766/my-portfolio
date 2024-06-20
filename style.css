@@ -534,5 +534,10 @@ body {
     background: transparent !important;
     backdrop-filter: blur(8px);
    } */
+   .input-field{
+    background: transparent !important;
+    color: white !important;
+    
+   }
 
         
