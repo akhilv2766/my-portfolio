@@ -226,10 +226,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease-in-out;
 
 
 }
-
+.cv-button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
 /* .cv-button-bg-1{
         width: 120px;
         height: 120px;
@@ -299,6 +303,8 @@ body {
     justify-content: space-around;
     /* background-color: rgb(19, 107, 184); */
     margin-left: 20%;
+    box-shadow: 5px 5px 10px black
+
 }
 
 .insta-with-circle {
@@ -644,3 +650,42 @@ body {
     .copyright-box{
         color: white;
     }
+    
+/*=========================================================media-query======================================================*/
+
+
+@media screen and(max-width:760px) {
+
+
+    
+    .custom-nav{
+        background-color: #37e923;
+        width: 500px;
+    }
+.first-section {
+        display: none;
+        width: 100px;
+        height: 100vh;
+        flex-direction: row-reverse !important;
+        background-color: aqua;
+    }
+    .left-section{
+        flex-direction: column;
+    }
+    .right-section{
+        flex-direction: column;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .skill-section{
+        flex-direction: column;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+}
+
