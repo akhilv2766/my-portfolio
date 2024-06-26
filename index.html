@@ -15,35 +15,39 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <nav class="container-fluid navbar-expand-lg">
     <div class="custom-nav">
       <div class="brand">
         Akhil V
       </div>
-      <div class="menu-item">
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="menu-item collapse navbar-collapse" id="navbarNavAltMarkup">
         
-        <a class="custom-nav-item" href="#home">
+        <a class="custom-nav-item nav-link" href="#home">
           <span>Home</span>
         </a>
-        <a class="custom-nav-item" href="#about">
+        <a class="custom-nav-item nav-link" href="#about">
           <span>About</span>
         </a>
       
-        <a class="custom-nav-item" href="#project">
+        <a class="custom-nav-item nav-link" href="#project">
           <span>Project</span>
         </a>
-        <a class="custom-nav-item" href="#contact">
+        <a class="custom-nav-item nav-link" href="#contact">
           <span>Contact</span>
         </a>
         
       </div>
-      <div class="brand-6">
+      <div class="contact-button">
         Contact me
       </div>
 
     </div>
-  </div>
-  <div class="home-section first-section" id="home" >
+  </nav>
+  <!-------------------------------------------------------------- Home-section----------------------------------------------------------------------------------------------------------------- -->
+  <div class="home-section " id="home" >
     <div class="left-section">
       <div class="text1">
         FULL-STACK-WEB-DEVELOPER
@@ -66,20 +70,6 @@
         <text x="42" y="60" fill="white">CV</text>
         <svg x="50" y="72" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
           <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="2 4" stroke-dashoffset="6" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21"><animate attributeName="stroke-dashoffset" dur="0.6s" repeatCount="indefinite" values="6;0"/></path><path stroke-dasharray="30" stroke-dashoffset="30" d="M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.1s" dur="0.3s" values="30;0"/></path><path stroke-dasharray="10" stroke-dashoffset="10" d="M12 8v7.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="10;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 15.5l3.5 -3.5M12 15.5l-3.5 -3.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="6;0"/></path></g>
-          <!-- <g transform="rotate(-90 12 12)">
-            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> -->
-              <!-- <path stroke-dasharray="64" stroke-dashoffset="64"
-                d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z">
-                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0" />
-              </path> -->
-              <!-- <path stroke-dasharray="12" stroke-dashoffset="12" d="M17 12H7.5">
-                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0" />
-              </path> -->
-              <!-- <path stroke-dasharray="8" stroke-dashoffset="8" d="M7 12L11 16M7 12L11 8">
-                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0" />
-              </path> -->
-            <!-- </g>
-          </g> -->
         </svg>
       </svg>
       <div class="circle-2">
@@ -97,27 +87,20 @@
         <div>
           <a href="https://www.instagram.com/_m_r_250__/"target="_blank"> <div class="insta-with-circle"></div></a>
         </div>
-        <div class="twitter-in-circle">
+        <div class="twitter-in-circle"> 
 
+          <a href="https://x.com/akhilv2766"target="_blank"> <div class="twitter-in-circle"></div></a>
         </div>
         <div class="inked-in-circle">
 
         </div>
         <div class="whatsapp-in-circle">
-
         </div>
-        
       </div>
-      
-    
-      
-
-
-
-
     </div>
   </div>
-  <div class="about-section" id="about"  data-aos="fade-down-right">
+  <!------------------------------------------------------------------- About-section-------------------------------------------- -->
+  <div class="about-section" id="about">
     <div class="left-section1">
       <img class="about-img" src="./about.jpg" alt="">
       <div class="text4" >
@@ -139,6 +122,7 @@
 
     </div>
   </div>
+  <!-------------------------------------------------------------- skill-section---------------------------------------------------------------------------------------------------------------- -->
   <div class="skill-section"  data-aos="zoom-in-left">
     <div class="skill-section-item-1">
       <div class="main-heading1">
@@ -179,9 +163,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24"><path fill="#ff0000" d="M7.533 12.249c-.011 1.985 1.445 3.168 3.768 2.63V9.618c-2.352-.716-3.758.733-3.768 2.631m3.839-10.238h3.199v15.143c-3.066.501-6.004.819-8.104-.355c-2.705-1.513-2.923-6.319-.782-8.46c1.085-1.085 3.271-1.85 5.616-1.351V2.225c-.006-.101-.012-.202.071-.214m8.389 3.342h-3.199V2.011h3.199z"/><path fill="#ff0000" d="M19.761 7.044c-.003 2.356-.003 4.048-.003 6.911c-.136 2.813-.104 5.052-1.135 6.398c-.203.266-.634.652-.995.924c-.303.228-.881.691-1.208.711c-.331.021-1.18-.459-1.564-.64c-.505-.237-.971-.553-1.493-.71c1.218-.754 2.372-1.32 2.844-2.844c.41-1.326.355-3.247.355-5.119c0-1.849.009-3.998.009-5.63z"/></svg>
           </div>
         </div>
-      
   </div>
     </div>
+    <!-- ----------------------------------------------------------------------project-section----------------------------------------- -->
     <div class="project-section"id="project"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
@@ -197,6 +181,7 @@
         </div>
       </div>
     </div>
+    <!-- -----------------------------------------------------Contact-section------------------------------------------------------------------------------------------------------------- -->
     <div class="contact-section"id="contact">
       <div class="contact-item">
         <div class="main-heading1"data-aos="fade-up"
@@ -232,6 +217,7 @@
         </div>
       </div>
     </div>
+    <!---------------------------------------------------------- Footer-section----------------------------------------------------------------------------------------------------------------- -->
     <div class="footer-section">
       <div class="intro-section">
         <h5>AKHIL V NAIR</h5>
@@ -254,6 +240,7 @@
             </div>
             <div class="twitter-in-circle">
       
+              <a href="https://x.com/akhilv2766"target="_blank"> <div class="twitter-in-circle"></div></a>
             </div>
             <div class="inked-in-circle">
       
@@ -266,7 +253,7 @@
     
   </div>
   <div class="copyright-box mt-5 mb-3 col-lg-12 col-sm-12 text-center">
-    <p><i class="bi bi-c-circle me-2"></i>Copyright 2024. Made By <a href="https://akhilvnair.in" target="_blank">akhilvnair</a></p>
+    <p><i class="bi bi-c-circle me-2"></i><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256"><path fill="currentColor" d="M128 56a72 72 0 1 0 72 72a72.08 72.08 0 0 0-72-72m0 104a31.8 31.8 0 0 0 25.61-12.8a8 8 0 1 1 12.79 9.61a48 48 0 1 1 0-57.63a8 8 0 1 1-12.79 9.61A32 32 0 1 0 128 160m0-136a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88"/></svg>Copyright 2024. Made By <a href="https://akhilvnair.in" target="_blank">akhilvnair</a></p>
 </div>
 </body>
 
