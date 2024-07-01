@@ -244,11 +244,11 @@ body {
     
 }
 
-.social1 .bi-facebook{
+.social .bi-facebook{
     font-size: 1.8rem;
-    color: rgb(123, 121, 121);
+color: rgb(123, 121, 121)
 }
-.social1 .bi-facebook:hover{
+.social.bi-facebook:hover{
     color: white;
   } 
 .social {
@@ -262,37 +262,38 @@ body {
     /* background-color: rgb(19, 107, 184); */
     margin-left: 20%;
     box-shadow: 5px 5px 10px black
+    
 
 }
 
-.social1 .bi-instagram {
+.social .bi-instagram{
     font-size: 1.8rem;
-    color: rgb(123, 121, 121);
-  }
+color: rgb(123, 121, 121)
+}
    
 
-  .social1 .bi-instagram:hover { 
+  .social .bi-instagram:hover { 
   color: white;
 }
-.social1 .bi-twitter-x{
+.social .bi-twitter-x{
     font-size: 1.8rem;
     color: rgb(123, 121, 121)
 }
-.social1 .bi-twitter-x:hover{
+.social .bi-twitter-x:hover{
 color: white;
 }
-.social1 .bi-linkedin{
+.social .bi-linkedin{
     font-size: 1.8rem;
 color: rgb(123, 121, 121)
 }
-.social1 .bi-linkedin:hover{
+.social .bi-linkedin:hover{
 color: white;
 }
-.social1 .bi-whatsapp{
+.social .bi-whatsapp{
     font-size: 1.8rem;
 color: rgb(123, 121, 121)
 }
-.social1 .bi-whatsapp:hover{
+.social .bi-whatsapp:hover{
 color: white;
 }
 /*----------------------------------------------------------- about-section------------------------------------------------------------------------------------------------------------ */
@@ -500,37 +501,40 @@ color: white;
     font-size: 200%;
     padding-top: 10%;
    }
-    .social .bi-facebook{
+    .social1 .bi-facebook{
         font-size: 2rem;
         color: rgb(123, 121, 121);
+       
     }
-    .social .bi-facebook:hover{
+    .social1 .bi-facebook:hover{
         color: white;
+        transform: scale(1.5);
+        transition: 1000ms;
       }
-      .social .bi-instagram {
+      .social1 .bi-instagram {
         font-size: 2rem;
         color: rgb(123, 121, 121);
       }
        
    
-      .social .bi-instagram:hover { 
+      .social1 .bi-instagram:hover { 
       color: white;
 }
-.social .bi-twitter-x{
+.social1 .bi-twitter-x{
     font-size: 2rem;
         color: rgb(123, 121, 121)
 }
-.social .bi-twitter-x:hover{
+.social1 .bi-twitter-x:hover{
     color: white;
 }
-.social .bi-linkedin{
+.social1 .bi-linkedin{
     font-size: 2rem;
     color: rgb(123, 121, 121)
 }
-.social .bi-linkedin:hover{
+.social1 .bi-linkedin:hover{
     color: white;
 }
-.social .bi-whatsapp{
+.social1 .bi-whatsapp{
     font-size: 2rem;
     color: rgb(123, 121, 121)
 }
@@ -590,6 +594,17 @@ color: white;
     }
     .footer-section{
         flex-direction: column;
+        background-color: #35006d;
     }
+    
 }
 
+
+
+/* .logo{
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    box-shadow: ;
+} */
+ 

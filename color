@@ -34,4 +34,7 @@ Thank you for visiting, and I look forward to embarking on this journey with you
 <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
   <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
   Icon link
-</a>
+
+
+
+  git config --global user.name "FIRST_NAME LAST_NAME"
