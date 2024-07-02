@@ -48,10 +48,9 @@ body {
     border: 1px solid rgba(233, 231, 231, 0.5);
     display: flex;
     align-items: center;
-    
-
-
 }
+
+
 
 .brand {
 
@@ -135,11 +134,11 @@ body {
 
 .left-section {
     color: white;
-
+width: 100vw;
     font-size: 40px;
     font-weight: normal;
     display: flex;
-
+    overflow: hidden;
     flex-direction: column;
 }
 
