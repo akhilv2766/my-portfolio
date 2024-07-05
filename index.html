@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="container- navbar-expand-lg">
+  <nav class="my-nav navbar-expand-lg">
     <div class="custom-nav">
       <div class="brand">
         Akhil V
@@ -32,18 +32,18 @@
         <a class="custom-nav-item nav-link" href="#about">
           <span>About</span>
         </a>
-      
+        <a class="custom-nav-item nav-link" href="#skills">
+          <span>Skills</span>
+        </a> 
         <a class="custom-nav-item nav-link" href="#project">
           <span>Project</span>
         </a>
-        <a class="custom-nav-item nav-link" href="#contact">
-          <span>Contact</span>
-        </a>
+        
         
       </div>
-      <div class="contact-button">
+      <a class="contact-button prevent-select" href="#contact" id="contactme">
         Contact me
-      </div>
+      </a>
 
     </div>
   </nav>
@@ -102,7 +102,8 @@
   <!------------------------------------------------------------------- About-section-------------------------------------------- -->
   <div class="about-section"data-aos="fade-down" id="about">
     <div class="left-section1">
-      <img class="about-img" src="./about.jpg" alt="">
+      <div><img class="about-img" src="./about.jpg" alt=""></div>
+      
       <div class="text4" >
         
         About<br>Me
@@ -123,7 +124,7 @@
     </div>
   </div>
   <!-------------------------------------------------------------- skill-section---------------------------------------------------------------------------------------------------------------- -->
-  <div class="skill-section" >
+  <div class="skill-section" id="skills">
     <div class="skill-section-item-1">
       <div class="main-heading1">
         MY SKILLS
@@ -182,8 +183,8 @@
       </div>
     </div>
     <!-- -----------------------------------------------------Contact-section------------------------------------------------------------------------------------------------------------- -->
-    <div class="contact-section"id="contact">
-      <div class="contact-item">
+    <div class="contact-section">
+      <div class="contact-item"id="contact">
         <div class="main-heading1">
           Contact Me
         </div>
