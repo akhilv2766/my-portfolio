@@ -140,6 +140,7 @@ width: 100vw;
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    height: 100vh;
 }
 
 .text1 {
@@ -352,6 +353,9 @@ color: white;
 
       }
       /*------------------------------------------------------------------ Contact-section---------------------------------------------------------------------------------------------------- */
+     .contact-section{
+        height: 100vh;
+     }
       .contact{
         color: var(--color-5);
         border-radius:25px;
@@ -390,7 +394,7 @@ color: white;
         width: 25%;
         justify-content: end;
         color: #37e923;
-        margin-top: 2.5%;
+        margin-top: 12.5%;
         margin-left: 2%;
       }
       .p-bar{
@@ -588,50 +592,3 @@ color: white;
       }
 /*=========================================================media-query======================================================*/
 @media screen and (max-width:760px) 
-{
- .social{
-    display: none;
- }
- .circle-2{
-    display: none;
- }
- .right-section{
-    flex-direction: column;
- }
-    .custom-nav{
-        
-        
-    }
-.home-section {
-        display: flex;
-       
-        flex-direction:column!important;
-      
-    }
-   
-    .left-section1{
-        display: flex;
-        flex-direction: column;
-    }
-    .right-section1{
-        display: flex;
-        flex-direction: column01;
-    }
-    .about-section{
-        flex-direction:column;
-    }
-    #contactme{
-        display: none !important;
-    }
-    
-}
-
-
-
-/* .logo{
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid white;
-    box-shadow: ;
-} */
- 
