@@ -63,10 +63,224 @@ body {
     font-size: 30px;
 
 }
+/*------------------------------------------------ Home-section-------------------------------------------------------------------------------------------------------------- */
+
+.left-section {
+    color: white;
+width: 100vw;
+    font-size: 40px;
+    font-weight: normal;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.text1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgba(160, 153, 153, 0.589);
+
+
+    font-size: 30px;
+}
+
+.text2 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+
+
+
+}
+
+.text3 {
+    color: rgba(230, 216, 216, 0.589);
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 20px;
+    border-left: 2px solid rgba(230, 216, 216, 0.589);
+    padding-left: 15px;
+    margin-top: 5%
+}
+
+.home-section {
+    padding-top: 10%;
+    padding-left: 10%;
+    display: flex;
+    height: 100vh;
+    padding-right: 0px;
+    
+}
+
+.cv-button {
+
+    color: white !important;
+    margin-top: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.cv-button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+/* .cv-button-bg-1{
+        width: 120px;
+        height: 120px;
+        transform-origin: center;
+        clip-path: circle(40%);
+        background-color:rgba(251, 62, 226, 0.3);
+        
+        
+    } */
+.right-section {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+
+
+}
+
+.left-section1{
+    display: flex;
+    flex-direction: row;
+}
+.about-section{
+    display: flex;
+    flex-direction:row;
+}
+.circle-cont{
+    transform: rotate(90deg);
+}
+
+.circle-2 {
+    height: 600px;
+    width: 600px;
+    
+    clip-path: circle(35%);
+    margin-top: 300px;
+    /* clip-path: ellipse(50% 50% at 50% 0%); */
+        transform: rotate(90deg);
+    align-self: last baseline;
+    background: hsla(197, 100%, 63%, 1);
+    
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+    
+}
+
+.social .bi-facebook{
+    font-size: 1.8rem;
+color: rgb(123, 121, 121)
+}
+.social.bi-facebook:hover{
+    color: white;
+  } 
+.social {
+    display: flex;
+    height: 60vh;
+    width: 80px;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(19, 107, 184); */
+    margin-left: 20%;
+    box-shadow: 5px 5px 10px black
+    
+
+}
+
+.social .bi-instagram{
+    font-size: 1.8rem;
+color: rgb(123, 121, 121)
+}
+   
+
+  .social .bi-instagram:hover { 
+  color: white;
+}
+.social .bi-twitter-x{
+    font-size: 1.8rem;
+    color: rgb(123, 121, 121)
+}
+.social .bi-twitter-x:hover{
+color: white;
+}
+.social .bi-linkedin{
+    font-size: 1.8rem;
+color: rgb(123, 121, 121)
+}
+.social .bi-linkedin:hover{
+color: white;
+}
+.social .bi-whatsapp{
+    font-size: 1.8rem;
+color: rgb(123, 121, 121)
+}
+.social .bi-whatsapp:hover{
+color: white;
+}
+/*----------------------------------------------------------- about-section------------------------------------------------------------------------------------------------------------ */
+.about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+}
+.left-section1 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+    margin-top: 5%;
+    font-size: 100px;
+}
+ .about-img{
+    width: 45vw;
+    height: 70vh;
+    clip-path: circle(40%)
+} 
+.text4{
+    position: absolute;
+    left: 500px;
+    top:0px;
+    line-height: 120px;
+}
+.right-section1 {
+    margin-top: 10%;
+    margin-left: 5%;
+    
+}
+.aboutme{
+    color: white;
+    font-size: 1.5em;
+    padding-right: 2%;
+    text-align: justify;
+}
   /*----------------------------------------------- Skill-section------------------------------------------------------------------------------------------------- */
   .skill-section{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
+    box-sizing: border-box;
+    margin-top: 25%;
 }
 .skill-section .main-heading1{
     color: rgb(255, 255, 255);
@@ -77,18 +291,21 @@ body {
     border-left: 2px solid rgba(230, 216, 216, 0.589);
     padding-left: 15px;
 }
+.skill-section-item-2{
+    padding-top: 10%;
+}
 .logo-section-1{
     display: flex;
-    justify-content:space-around;
-    margin-top: 10%;
-    width: 80%;
-    margin-left: 16%
+    padding-top: 10%;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
 .logo-section-2{
     display: flex;
-    justify-content: space-between;
     padding-top: 10%;
     justify-content: space-around;
+    box-sizing: border-box;
+
 }
 /*============================================================ project-section================================================================================================================== */
 .project-section{
@@ -163,7 +380,7 @@ body {
    justify-content: space-around;
    }
    
-   .intro-section{
+   .intro-section1{
     padding-right: 5%;
     padding-top: 2%;
     font-size: 1.2em;
@@ -171,6 +388,7 @@ body {
    }
    .mt-3{
     font-size: 1rem;
+    background-color: antiquewhite;
    }
    .intro-section h5{
     font-family: "Ubuntu";
@@ -202,7 +420,7 @@ body {
   }
    
 
-  ..social-media.bi-instagram:hover { 
+  .social-media.bi-instagram:hover { 
   color: white;
 }
 .social-media .bi-twitter-x{
@@ -329,16 +547,16 @@ color: white;
     /*=============================================== ABOUT-SECTION================================================================================================================================== */
    .about-img{
     width: 100vw;
+    clip-path: none;
+    height: auto;
    }
    .about-section {
     padding-top: 5%;
         display: flex;
-        /* background-color: aliceblue; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        
+        height: 100vh;  
 }
 .about-section .text4{
     color: rgb(255, 255, 255);
@@ -346,12 +564,25 @@ color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 36px;
+    left: 0px;
+    top: 25%;
+    padding-left: 3%;
     border-left: 2px solid rgba(230, 216, 216, 0.589);
-    padding-left: 15px;
+    
+}
+.left-section1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0%;
 }
 .about-section .aboutme{
     font-size: 16px;
+    text-align:left;
     color: rgb(255, 255, 255);padding: 5%;
+    padding-right: 0%;
+    
+   
 }
 .about-section .arrow{
     display: none;
