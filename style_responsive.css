@@ -57,10 +57,81 @@ body {
 }
 .brand {
 
+   display: none;
+}
+.menu-item {
+    display: flex;
     color: var(--color-5);
-    font-weight: bolder;
-    margin-left: 40px;
-    font-size: 30px;
+    justify-content:space-evenly;
+    margin-right:18%;
+    font-size: 20px;
+    width: 30vw;
+}
+
+.custom-nav-item{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in;
+    background: transparent;
+    
+}
+
+.custom-nav-item span{
+    position: relative;
+    font-size: 1.5em;
+}
+
+.custom-nav-item span::after{
+    content: '' ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.custom-nav-item:hover span::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link{
+    color: var(--color-5);
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+.contact-button{
+    color: var(--color-5);
+    border-radius: 25px;
+   text-decoration: none;
+    font-size: 17px;
+    background-color: #440686;
+    padding: 10px;
+    width: 13%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 2%;
+
+}
+.navbar-toggler-icon{
+    color: white;
+}
+
+.contact-button:hover {
+    background-color: #d017b8;
+    cursor: pointer;
+    color: #5e09b9;
+    transition: 0.5s;
+}
+.toogle{
+display: none;
 
 }
 /*------------------------------------------------ Home-section-------------------------------------------------------------------------------------------------------------- */
@@ -83,14 +154,14 @@ width: 100vw;
     color: rgba(160, 153, 153, 0.589);
 
 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .text2 {
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
-    font-size: 100px;
+    font-size: 3em;
 
 
 
@@ -275,6 +346,24 @@ color: white;
     padding-right: 2%;
     text-align: justify;
 }
+.contact{
+    color: var(--color-5);
+    border-radius:30px;
+    margin-left: 45%;
+    font-size: 19px;
+    background-color: #440686;
+    padding:20px;
+    margin-top: 100px;
+    border-radius: 30px;
+    text-align: center;
+    width: 10em;
+  }
+  .contact:hover{
+    background-color: #67ee74;
+    cursor: pointer;
+    color: #5e09b9;
+    transition: 0.5s;
+  }
   /*----------------------------------------------- Skill-section------------------------------------------------------------------------------------------------- */
   .skill-section{
     height: 80vh;
@@ -482,6 +571,10 @@ color: white;
 /* =========================Responsive Style======================================================================== */
 @media screen and (max-width:760px) 
 {
+    .custom-nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     body{
         flex-direction: column;
         justify-content: flex-start;
@@ -490,9 +583,13 @@ color: white;
         display: none;
     }
     .brand{
-        font-size: 20px;
+       display: none;
     }
-
+    .toogle{
+        display: block; 
+        padding-right:5% ;
+ }
+/*=================================================== home-section============================================================================================================== */
     .home-section{
         padding-top: 25%;
         display: flex;
@@ -540,10 +637,8 @@ color: white;
         
         overflow: hidden;
         align-self: end;
-
-
-        /* background-color: yellow; */
     }
+    
     /*=============================================== ABOUT-SECTION================================================================================================================================== */
    .about-img{
     width: 100vw;
@@ -707,16 +802,20 @@ margin-top: 40%;
     background-color: brown;
     display: none;
    }
+   .mt-31{
+    padding-left: 5%;
+   }
 
    .social-media{
 
-    width: 20vw;
+    width: 10vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     box-shadow: 5px 5px 10px black;
-    border-radius: 30px;
+    border-radius: 30px;;
+    padding-top: 10%;
     
    }
     .social-media .bi-facebook{

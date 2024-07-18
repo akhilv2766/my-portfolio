@@ -18,30 +18,37 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="custom-nav">
-    <div class="brand">
-      Akhil V
+  <nav class="my-nav navbar-expand-lg">
+    <div class="custom-nav">
+      <div class="brand">
+        Akhil V
+      </div>
+      <div class="menu-item collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+        <a class="custom-nav-item nav-link" href="#home">
+          <span>Home</span>
+        </a>
+        <a class="custom-nav-item nav-link" href="#about">
+          <span>About</span>
+        </a>
+        <a class="custom-nav-item nav-link" href="#skills">
+          <span>Skills</span>
+        </a> 
+        <a class="custom-nav-item nav-link" href="#project">
+          <span>Project</span>
+        </a>
+      </div>
+      <a class="contact-button prevent-select" href="#contact" id="contactme">
+        Contact me
+      </a>
+      <div class="toogle">
+        <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="6" width="16" height="2" fill="white"/>
+          <rect x="4" y="11" width="16" height="2" fill="white"/>
+          <rect x="4" y="16" width="16" height="2" fill="white"/>
+        </svg>
+      </div>
     </div>
-    <div class="menu-item collapse navbar-collapse" id="navbarNavAltMarkup">
-
-      <a class="custom-nav-item nav-link" href="#home">
-        <span>Home</span>
-      </a>
-      <a class="custom-nav-item nav-link" href="#about">
-        <span>About</span>
-      </a>
-      <a class="custom-nav-item nav-link" href="#skills">
-        <span>Skills</span>
-      </a>
-      <a class="custom-nav-item nav-link" href="#project">
-        <span>Project</span>
-      </a>
-
-
-    </div>
-    <a class="contact-button prevent-select" href="#contact" id="contactme">
-      Contact me
-    </a>
   </nav>
   <!-- End Navigation Bar -->
   <!-- Home Section -->
@@ -96,6 +103,7 @@
       </div>
     </div>
   </div>
+  
   <!------------------------------------------------------------------- About-section-------------------------------------------- -->
   <div class="about-section"data-aos="fade-down" id="about">
     <div class="left-section1">
@@ -103,7 +111,7 @@
       
       <div class="text4" >
         
-        About<br>Me
+        About Me
       </div>
     </div>
     <div class="right-section1">
@@ -121,7 +129,7 @@
     </div>
   </div>
   <!--================================================== SKILL-SECTION========================================================================================================= -->
-  <div class="skill-section">
+  <div class="skill-section"id="skills">
     <div class="skill-section-item-1">
       <div class="main-heading1">
         MY SKILLS
@@ -225,7 +233,7 @@
     </div>
   </div>
   <!--========================================== project-section================================================================================= -->
-  <div class="project-section">
+  <div class="project-section"id="project">
     <div class="project-item">
       <div class="mainheading">
         Project
