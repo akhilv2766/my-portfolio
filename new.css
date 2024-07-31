@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --color-1: #d017b8;
+    --color-2: #2e07ca;
+    --color-3: #140524;
+    --color-4: #1d0a6a;
+    --color-5: rgb(220, 219, 219);
+
+}
+body {
+    font-family: "Open Sans", sans-serif;  
+    color: white;
+    background: rgb(12, 1, 35);
+    background: linear-gradient(90deg, rgba(33, 9, 85, 1) 45%, rgba(208, 23, 184, 1) 74%, rgba(29, 10, 106, 1) 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav{
+ height: 80px;
+ background-color: var(--color-3);
+}
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+  display:inline-block ;  
+  line-height: 80px;
+  margin: 0.15px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none   ;
+}
+nav ul li a:before{
+   position: absolute;
+   content:'';
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 50px; 
+   background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: tranform .4s linear;
+}
+nav ul li a:hover:before{
+transform: scaleX(1);
+transform-origin: left;
+}
